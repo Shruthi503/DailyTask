@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//1.arrow function example
+        const multiplybytwo=(num)=>{
+        return num*2;
+      }
+      console.log(`multiply by two is ${multiplybytwo(5)}`)  
+//2.example
+         const isEven=(num)=>{
+        if(num%2==0){
+          return "Even"
+        }
+        else{
+          return "odd"
+        }
+     }  
+     //console.log(`given number is ${isEven(70)}`)
+// 1.clouser function example
+         function outerfunction(){
+        var outer=5;
+        function inner(){
+          console.log(`outer ${outer}`)
+        }
+        return inner();
+      }
+      var clouser=outerfunction();
+      console.log(clouser)     
+//2.clouser example
+              function outerfunction(){
+          var outer="this is outer var";
+          function innerfunction(){
+            console.log(`outer ${outer}`)
+          }
+          return innerfunction();
+        }
+          let outerfunction1=outerfunction()
+          console.log(outerfunction1)    
+//3.clouser example
+           function outerfunction(){
+            var clouser="this is outer"
+            function innerfunction(){
+                console.log(`clouser ${clouser}`)
+            }
+                return innerfunction();
+        }
+        let outer=outerfunction()
+            console.log(outer)  
+//1.pure
+           function multiply(x,y){
+            return x*y;
+        }
+        let multiply1=multiply(2,3)
+        let multiply2=multiply(2,3)
+        console.log('multiply1',multiply1,'multiply2',multiply2)  
+//2.pure
+        function sum(a,b){
+          return a+b
+        }
+        let sum1=sum(1,2)
+        let sum2=sum(1,2)
+        console.log('sum1',sum1,'sum2',sum2) 
+
+//1.call stack function example
+         function functionA(){
+            return " i am function A"
+        }
+        function functionB(){
+            return "i am function B"
+        }
+        function functionC(){
+            return "i am function C"
+        }
+        let a=functionA()
+        console.log(a)
+ 
+//2.call stack function example
+        /*  function a(){
+          return " i am functiona"
+          function b(){
+            a();
+            return "i am function b"
+          }
+           function c(){
+             b();
+            return "i am function c"
+           }
+       } 
+       a()
+       console.log('in function C')  */
+//1.Global and Local variables
+        var global=10
+       function scope(){
+        console.log(global)
+       }
+       scope() 
+//2.global and local variables
+        var local=20
+       function scopetest(){
+        console.log(local)
+       }
+       scopetest() 
+      
+      
+
+        
+</script>
+</html>
