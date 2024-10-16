@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment of js</title>
+</head>
+<body>
+   
+</body>
+<script>
+// write a javascript programe to remove all charecters from a given string that appear more than once
+      let arr=['a','b','c','c','d','d','e']
+        function removeduplicate(arr){
+          return arr.filter((item,index)=>arr.indexOf(item)===index);
+        }
+        console.log(removeduplicate(arr))
+      
+
+//write a js program to create a new string without the first and last charecters of a given string   
+     function start_end(str){
+       return str.slice(1,-1)
+    }
+    let result=start_end("hello world")
+    console.log(result)  
+
+//write a function that takes an array of strings as input and prints each element to the console using the forEach method
+      function foreach(str){
+        let Array=['hai','good','morning']
+        Array.forEach(string=>console.log(string))
+     }
+      let a=foreach(Array)
+//write a function that takes an array of numbers as input and
+// returns true if any of the numbers are negative,otherwise false,using the some method
+       let Array=['1','2','3','-4','5']
+       let result_Array=Array.some(number=>number<0)
+       console.log(result_Array)
+   
+</script>
+</html>
